@@ -3,17 +3,18 @@ public void setup()
 {     
 int i=2;
     while(true){
-	String d=e.substring(i,i+10);
-	double num =Double.parseDouble(d);
-	if(isPrime(num))
-		System.out.println(num+"is prime");
-	i++;
-
+  String d=e.substring(i,i+10);
+  double num =Double.parseDouble(d);
+  if(isPrime(num)){
+    System.out.println(num+"is prime and at position" +i+"in e");
+    break;
+  }
+  i++;
 }
 }  
 public void draw()  
 {   
-	//not needed for this assignment
+  //not needed for this assignment
 }  
 public boolean isPrime(double num)  
 {   
